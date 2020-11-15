@@ -27,6 +27,7 @@ export default function Admin() {
 
   return (
     <div>
+      <br />
       <h1>Hello Admin</h1>
       <br />
       <p>{msg !== "" ? `${msg} has been deleted` : ""} </p>
@@ -34,7 +35,7 @@ export default function Admin() {
       <h3>List of registered users</h3>
       <p> (currently logged-in user is excluded)</p>
       <div className="container">
-        <table className="table table-striped">
+        <table className="table">
           <thead>
             <tr>
               <th>User</th>
