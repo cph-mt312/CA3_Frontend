@@ -17,15 +17,15 @@ export const Login = ({ isLoggedIn, loginMsg, setLoginStatus }) => {
       setError("Remember to select an API on the Home page.");
     } else {
       apiFacade
-      .login(user)
-      .then((res) => setLoginStatus(!isLoggedIn))
-      .catch((promise) => {
-        if (promise.fullError) {
-          printError(promise, setError);
-        } else {
-          setError("No response from API. Make sure it is running.");
-        }
-      });
+        .login(user)
+        .then((res) => setLoginStatus(!isLoggedIn))
+        .catch((promise) => {
+          if (promise.fullError) {
+            printError(promise, setError);
+          } else {
+            setError("No response from API. Make sure it is running.");
+          }
+        });
     }
   };
 
@@ -40,7 +40,7 @@ export const Login = ({ isLoggedIn, loginMsg, setLoginStatus }) => {
         <h2>{loginMsg}</h2>
         <br />
         <form onSubmit={handleSubmit}>
-        <label>Username</label><br />
+          <label>Username</label><br />
           <input
             id="username"
             onChange={handleChange}
@@ -53,7 +53,7 @@ export const Login = ({ isLoggedIn, loginMsg, setLoginStatus }) => {
           />
           <br />
           <br />
-          <input type="submit" value="Log in" className="btn btn-secondary"/>
+          <input type="submit" value="Log in" className="btn btn-dark" />
           <br />
           <p style={{ color: "red" }}>{error}</p>
         </form>
@@ -64,7 +64,7 @@ export const Login = ({ isLoggedIn, loginMsg, setLoginStatus }) => {
       <div>
         <h2>{loginMsg}</h2>
         <br />
-        <button onClick={logout} className="btn btn-secondary">Log out</button>
+        <button onClick={logout} className="btn btn-dark">Log out</button>
       </div>
     );
   }

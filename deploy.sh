@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-DIRECTORY="ca3-startcode" # Directory name
-DROPLET_URL="bencat.dk" # Your own URL
+DIRECTORY="gotclub" # Directory name
+DROPLET_URL="orc-dungeon.com" # Your own URL
 
 echo "##############################"
 echo "Building the frontend project"

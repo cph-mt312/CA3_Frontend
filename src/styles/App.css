@@ -1,5 +1,7 @@
-.App {
+.App, body, html {
   text-align: center;
+  background-color: #BEB8AF;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .tableCenter {

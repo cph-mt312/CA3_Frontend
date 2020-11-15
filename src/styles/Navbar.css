@@ -3,7 +3,7 @@ ul.header {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #555555;
+  background-color: #423730;
 }
 
 ul.header li {
@@ -17,14 +17,15 @@ ul.header li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+
 ul.header li a:hover:not(.active) {
-  background-color: #111;
+  background-color: black;
 }
 
 .selected {
-  background-color: #333333;
+  background-color: #261E1D;
 }
 
 .active {
-  background-color: #333333;
+  background-color: #261E1D;
 }

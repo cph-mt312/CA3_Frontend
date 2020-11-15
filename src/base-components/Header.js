@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import { Login } from "./Login";
 import Home from "./Home";
-import Example from "../components/Example";
+import GameOfThrones from "../components/GameOfThrones";
 import Admin from "./Admin";
 import Register from "./Register";
 import NoMatch from "./NoMatch"
@@ -31,8 +31,8 @@ export default function Header({ isLoggedIn, setLoginStatus, loginMsg }) {
         {isLoggedIn && (
           <React.Fragment>
             <li>
-              <NavLink activeClassName="active" to="/example">
-                Example
+              <NavLink activeClassName="active" to="/got">
+                Quotes
               </NavLink>
             </li>
           </React.Fragment>
@@ -68,14 +68,14 @@ export default function Header({ isLoggedIn, setLoginStatus, loginMsg }) {
       </ul>
 
       <Switch>
-      {/* for deployment */}
-        <Route path="/ca3-startcode">
+        {/* for deployment */}
+        <Route path="/gotclub">
           <Redirect to="/" />
         </Route>
         <Route exact path="/">
           <Home />
-          </Route>
-        <PrivateRoute path="/example" isLoggedIn={isLoggedIn} component={Example} />
+        </Route>
+        <PrivateRoute path="/got" isLoggedIn={isLoggedIn} component={GameOfThrones} />
         <PrivateRoute path="/admin" isLoggedIn={isLoggedIn} component={Admin} />
         <Route path="/login">
           <Login
@@ -88,7 +88,7 @@ export default function Header({ isLoggedIn, setLoginStatus, loginMsg }) {
           <Register />
         </Route>
         <Route>
-         <NoMatch />
+          <NoMatch />
         </Route>
       </Switch>
     </div>

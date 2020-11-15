@@ -50,7 +50,7 @@ export default function Admin() {
                   <td>{user.username}</td>
                   <td>{roles}</td>
                   <td>
-                    <button className="btn btn-secondary" onClick={deleteUser} value={user.username}>
+                    <button className="btn btn-dark" onClick={deleteUser} value={user.username}>
                       Delete
                     </button>
                   </td>
