@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { REMOTE_URL } from "../utils/settings";
 
 export let URL = REMOTE_URL;
