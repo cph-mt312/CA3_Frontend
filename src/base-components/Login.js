@@ -37,6 +37,7 @@ export const Login = ({ isLoggedIn, loginMsg, setLoginStatus }) => {
   if (!isLoggedIn) {
     return (
       <div>
+        <br />
         <h2>{loginMsg}</h2>
         <br />
         <form onSubmit={handleSubmit}>
@@ -62,6 +63,7 @@ export const Login = ({ isLoggedIn, loginMsg, setLoginStatus }) => {
   } else {
     return (
       <div>
+        <br />
         <h2>{loginMsg}</h2>
         <br />
         <button onClick={logout} className="btn btn-dark">Log out</button>

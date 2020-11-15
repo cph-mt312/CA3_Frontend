@@ -1,7 +1,9 @@
-.App, body, html {
+.App, body {
   text-align: center;
-  background-color: #BEB8AF;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url("https://i.pinimg.com/originals/49/21/56/492156f7467dc00a1a76cffe2f8a991c.jpg");
+  background-size: cover;
+  color: white;
 }
 
 .tableCenter {

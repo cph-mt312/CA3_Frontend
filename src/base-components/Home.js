@@ -8,7 +8,7 @@ export default function Home() {
     URL === LOCAL_URL ? "Local API" : URL === REMOTE_URL ? "Remote API" : "none"
   );
 
-  useEffect(() => {}, [currentURL]);
+  useEffect(() => { }, [currentURL]);
 
   const changeURL = (e) => {
     URL = e.target.value;
@@ -21,8 +21,12 @@ export default function Home() {
 
   return (
     <div>
+      <br />
       <h1>Home</h1>
-      <p>This is BornIT's SPA startcode</p>
+      <p>This is BornIT's SPA startcode - <i>Game of Thrones Edition</i></p>
+      <img
+        src="https://www.nicepng.com/png/full/55-554365_game-of-thrones-logo-transparent-for-kids-feast.png"
+      />
       <br />
       <p style={{ fontWeight: "bold" }}>
         Select which API to use <br />
@@ -33,21 +37,6 @@ export default function Home() {
         <option value={LOCAL_URL}>Local API</option>
         <option value={REMOTE_URL}>Remote API</option>
       </select>
-      <br /><br />
-      <h2>Getting started</h2>
-      <br />
-      <p>
-        If you have followed the README from the repo for this startcode<br />
-        you should have your URLs set up properly and be ready to go. <br />
-        From here, you should do the following:<br /> <br />
-
-        - Select API to use <br />
-        - Register new user (if first time) <br />
-        - Log in <br />
-        - Check out the provided example <br />
-        - If you have a user with the admin role, check out the admin exclusive section
-
-      </p>
     </div>
   );
 }

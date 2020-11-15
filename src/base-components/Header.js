@@ -1,6 +1,7 @@
 import "../styles/App.css";
 import "../styles/Navbar.css";
 import React from "react";
+import SnowStorm from 'react-snowstorm';
 import {
   Switch,
   Route,
@@ -91,6 +92,7 @@ export default function Header({ isLoggedIn, setLoginStatus, loginMsg }) {
           <NoMatch />
         </Route>
       </Switch>
+      <SnowStorm />
     </div>
   );
 }

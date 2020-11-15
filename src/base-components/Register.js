@@ -35,6 +35,7 @@ export default function Register() {
 
     return (
         <div>
+            <br />
             <h2>Register</h2>
             <form onSubmit={registerUser}>
                 <br />
